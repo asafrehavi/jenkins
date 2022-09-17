@@ -2,10 +2,11 @@ pipeline {
     agent any
 
     stages {
-        stage('clone repo') {
+        stage('clone') {
             steps {
-                echo 'Hello World'
+                echo 'clone start'
                 git branch: 'main', credentialsId: '8cdcb3b7-830a-4bd7-8ae0-1a657b5c6f26', url: 'https://github.com/asafrehavi/jenkins.git'
+                echo 'clone end'
             }
         }
     }
