@@ -1,0 +1,2 @@
+run jenkins manually
+java -jar jenkins.war
